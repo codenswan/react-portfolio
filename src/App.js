@@ -3,12 +3,15 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import Contact from "./pages/Contact.jsx";
-import NoMatch from "./pages/NoMatch.jsx";
+import Header from "./components/header/Header.jsx";
+import Footer from "./components/footer/Footer.jsx";
+// import NoMatch from "./pages/NoMatch.jsx";
 
 export default function App() {
   return (
     <Router>
       <div>
+        <Header />
         <Switch>
           <Route exact path={["/", "/about"]}>
             <Home />
@@ -19,10 +22,11 @@ export default function App() {
           <Route exact path="/contact">
             <Contact />
           </Route>
-          <Route>
+          {/* <Route>
             <NoMatch />
-          </Route>
+          </Route> */}
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
