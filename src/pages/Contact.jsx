@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Axios from "axios";
-import { Container } from "react-bulma-components";
+import { Container, Section } from "react-bulma-components";
+import "./styles.css";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -44,6 +45,7 @@ export default function Contact() {
         // validate the email here
         // @
         // value should contain only 1 @
+        // eslint-disable-next-line
         const isValid = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
           value
         ); // 99% email regex
@@ -51,7 +53,6 @@ export default function Contact() {
         if (!isValid) {
           // show error msg
         }
-
         // value should contain only 1 .
         setEmail(value);
       },
@@ -66,81 +67,80 @@ export default function Contact() {
   };
 
   return (
-  <div>
-      
-    <Container fluid className="container" id="contact">
-      <div className="field">
-        <label className="label">Name</label>
-      </div>
-      <div className="control">
-        <input
-          className="input"
-          type="text"
-          placeholder="Name"
-          value={name}
-          name="name"
-          onInput={inputHandler}
-        />
-      </div>
-
-      <div className="field">
-        <label className="label">Email</label>
-        <div className="control has-icons-left has-icons-right">
-          <input
-            className="input is-danger"
-            type="email"
-            placeholder="Please add your email adderss"
-            value={email}
-            name="email"
-            onInput={inputHandler}
-          />
-          <span className="icon is-small is-left">
-            <i className="fas fa-envelope"></i>
-          </span>
-          <span className="icon is-small is-right">
-            <i className="fas fa-exclamation-triangle"></i>
-          </span>
+    <Section>
+      <Container fluid className="container" id="contact">
+        <div className="field">
+          <label className="label">Name</label>
         </div>
-      </div>
-
-      <div className="field">
-        <label className="label">Subject</label>
         <div className="control">
           <input
             className="input"
             type="text"
-            placeholder="Subject"
-            value={subject}
-            name="subject"
+            placeholder="Name"
+            value={name}
+            name="name"
             onInput={inputHandler}
           />
         </div>
-      </div>
 
-      <div className="field">
-        <label className="label">Message</label>
-        <div className="control">
-          <textarea
-            className="textarea"
-            placeholder="Message"
-            value={message}
-            name="message"
-            onInput={inputHandler}
-          ></textarea>
+        <div className="field">
+          <label className="label">Email</label>
+          <div className="control has-icons-left has-icons-right">
+            <input
+              className="input is-danger"
+              type="email"
+              placeholder="Please add your email adderss"
+              value={email}
+              name="email"
+              onInput={inputHandler}
+            />
+            <span className="icon is-small is-left">
+              <i className="fas fa-envelope"></i>
+            </span>
+            <span className="icon is-small is-right">
+              <i className="fas fa-exclamation-triangle"></i>
+            </span>
+          </div>
         </div>
-      </div>
 
-      <div className="field is-grouped">
-        <div className="control">
-          <button className="button is-link" onClick={submitHandler}>
-            Submit
-          </button>
+        <div className="field">
+          <label className="label">Subject</label>
+          <div className="control">
+            <input
+              className="input"
+              type="text"
+              placeholder="Subject"
+              value={subject}
+              name="subject"
+              onInput={inputHandler}
+            />
+          </div>
         </div>
-        <div className="control">
-          <button className="button is-link is-light">Cancel</button>
+
+        <div className="field">
+          <label className="label">Message</label>
+          <div className="control">
+            <textarea
+              className="textarea"
+              placeholder="Message"
+              value={message}
+              name="message"
+              onInput={inputHandler}
+            ></textarea>
+          </div>
         </div>
-      </div>
-    </Container>
-  </div>
+
+        <div className="field is-grouped">
+          <div className="control">
+            <button className="button is-link" onClick={submitHandler}>
+              Submit
+            </button>
+          </div>
+          <div className="control">
+            <button className="button is-link is-light">Cancel</button>
+          </div>
+        </div>
+      </Container>
+    </Section>
   );
 }

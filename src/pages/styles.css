@@ -1,0 +1,10 @@
+#contact {
+    background-color: white;
+    padding: 20px;
+    /* border-radius: 12px 12px 12px 12px;
+    box-shadow: 10px 5px 5px grey; */
+}
+
+.section {
+    flex: 1;
+  }
