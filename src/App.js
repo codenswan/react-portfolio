@@ -4,7 +4,7 @@ import Home from "./pages/Home.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import Contact from "./pages/Contact.jsx";
 import Header from "./components/header/Header.jsx";
-import Footer from "./components/footer/Footer.jsx";
+import StickyFooter from "./components/footer/StickyFooter";
 // import NoMatch from "./pages/NoMatch.jsx";
 
 export default function App() {
@@ -26,7 +26,7 @@ export default function App() {
             <NoMatch />
           </Route> */}
         </Switch>
-        <Footer />
+        <StickyFooter />
       </div>
     </Router>
   );
