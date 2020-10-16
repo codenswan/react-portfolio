@@ -1,36 +1,36 @@
-import React, { useState } from "react";
-import Axios from "axios";
-import { Container, Section } from "react-bulma-components";
-import "./styles.css";
+import React, { useState } from 'react';
+import Axios from 'axios';
+import { Container, Section } from 'react-bulma-components';
+import './styles.css';
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
   const submitHandler = (event) => {
     event.preventDefault();
     let url =
-      "https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXMCO-2c0ce7ALygdVaRSTtOcGT00ZizKONfr3y9DFKthDjQ/formResponse";
+      'https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXMCO-2c0ce7ALygdVaRSTtOcGT00ZizKONfr3y9DFKthDjQ/formResponse';
 
     let payload = {
-      "entry.1838426375": name,
-      "entry.604041197": subject,
-      "entry.816631961": message,
+      'entry.1838426375': name,
+      'entry.604041197': subject,
+      'entry.816631961': message,
       emailAddress: email,
     };
-
+    //todo function to clear form once submitted
     const formData = new FormData();
     for (let key in payload) {
       formData.append(key, payload[key]);
     }
     Axios({
-      method: "post",
+      method: 'post',
       url: url,
       data: formData,
       headers: {
-        "content-type": "multipart/form-data",
+        'content-type': 'multipart/form-data',
       },
     }).then((response) => {
       console.log(response);
@@ -42,18 +42,15 @@ export default function Contact() {
     const handlers = {
       setMessage,
       setEmail: function (value) {
-        // validate the email here
-        // @
-        // value should contain only 1 @
+        // validate email
         // eslint-disable-next-line
         const isValid = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
           value
-        ); // 99% email regex
+        );
 
         if (!isValid) {
-          // show error msg
+          console.log('Not a valid email');
         }
-        // value should contain only 1 .
         setEmail(value);
       },
       setName,
