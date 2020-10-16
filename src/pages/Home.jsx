@@ -1,14 +1,14 @@
-import React from "react";
-import { Container, Section } from "react-bulma-components";
-import "./styles.css";
-import Photo from "./circle-cropped.png";
+import React from 'react';
+import { Container, Section } from 'react-bulma-components';
+import './styles.css';
+import Photo from './circle-cropped.png';
 
 export default function () {
   return (
     <Section>
       <Container>
         <div id="profile-pic">
-          <img  src={Photo} alt="profile pic" />
+          <img src={Photo} alt="profile pic" />
         </div>
         <div id="bio">
           <article id="bio-text">
@@ -47,8 +47,12 @@ export default function () {
             </p>
             <br />
             <p>
-              I can be contacted by phone on 0448405814 or by email at{" "}
-              <a href="mailto:rodger.swan@gmail.com" target="_blank">
+              I can be contacted by phone on 0448405814 or by email at{' '}
+              <a
+                href="mailto:rodger.swan@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 rodger.swan@gmail.com.
               </a>
             </p>
