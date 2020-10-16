@@ -4,14 +4,14 @@ import './styles.css';
 
 export default function Cards(props) {
   return (
-    // <Columns className="features">
-    //   <Columns.Column className="is-4">
-    <Card className="card is-shady" key={props.id}>
+    <Card className="is-shady" key={props.id}>
       <Card.Image size="4by3" src={props.image} alt="project logo" />
       <Card.Content className="card-content">
         <Content className="content">
           <h4>{props.title}</h4>
           <p>{props.about}</p>
+          <p>Languages: {props.languages}</p>
+          <p>Technologies: {props.technologies}</p>
         </Content>
       </Card.Content>
       <Card.Footer>
@@ -34,7 +34,5 @@ export default function Cards(props) {
         </Card.Footer.Item>
       </Card.Footer>
     </Card>
-    //   </Columns.Column>
-    // </Columns>
   );
 }
