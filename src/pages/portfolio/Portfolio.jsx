@@ -9,6 +9,7 @@ export default function Portfolio() {
       <Container id="portfolio">
         {portfolioArray.map((portfolio) => (
           <Cards
+            key={portfolio.id}
             id={portfolio.id}
             title={portfolio.title}
             about={portfolio.about}
