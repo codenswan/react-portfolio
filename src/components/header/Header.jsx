@@ -1,31 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {Container, Hero, Navbar } from "react-bulma-components";
-import Banner from "./Tech-Base.png";
-import "./header.css";
+import React from 'react';
+import { Container, Hero, Navbar } from 'react-bulma-components';
+import Banner from './Tech-Base.png';
+import './header.css';
 
 export default function Header() {
   return (
     <div>
-      <Hero is-small>
+      <Hero className="is-small">
         <Hero.Body>
           <Container fluid>
             <img src={Banner} alt="banner" />
           </Container>
         </Hero.Body>
       </Hero>
-      <div class="box cta">
-        <Navbar.Container class="has-text-right">
-          <Navbar.Menu class="nav-right nav-menu is-active" id="navMenu">
-            
-            <Navbar.Item class="nav-item" >
-              <Link to="/about">About | </Link>
+      <div className="box cta">
+        <Navbar.Container className="has-text-right">
+          <Navbar.Menu className="nav-menu is-active" id="navMenu">
+            <Navbar.Item className="nav-item" href="/about">
+              {/* <Link to="/about">About | </Link> */}
+              About
             </Navbar.Item>
-            <Navbar.Item class="nav-item" >
-            <Link to="/portfolio">Portfolio | </Link>
+            <Navbar.Item className="nav-item" href="/portfolio">
+              Portfolio
             </Navbar.Item>
-            <Navbar.Item class="nav-item" >
-            <Link to="/contact">Contact </Link>
+            <Navbar.Item className="nav-item" href="/contact">
+              Contact
             </Navbar.Item>
           </Navbar.Menu>
         </Navbar.Container>
