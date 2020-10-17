@@ -68,35 +68,27 @@ export default function Contact() {
       <Container fluid className="container" id="contact">
         <div className="field">
           <label className="label">Name</label>
-        </div>
-        <div className="control">
-          <input
-            className="input"
-            type="text"
-            placeholder="Name"
-            value={name}
-            name="name"
-            onInput={inputHandler}
-          />
+          <div className="control">
+            <input
+              className="input"
+              type="text"
+              value={name}
+              name="name"
+              onInput={inputHandler}
+            />
+          </div>
         </div>
 
         <div className="field">
           <label className="label">Email</label>
-          <div className="control has-icons-left has-icons-right">
+          <div className="control">
             <input
-              className="input is-danger"
+              className="input"
               type="email"
-              placeholder="Please add your email adderss"
               value={email}
               name="email"
               onInput={inputHandler}
             />
-            <span className="icon is-small is-left">
-              <i className="fas fa-envelope"></i>
-            </span>
-            <span className="icon is-small is-right">
-              <i className="fas fa-exclamation-triangle"></i>
-            </span>
           </div>
         </div>
 
@@ -106,7 +98,6 @@ export default function Contact() {
             <input
               className="input"
               type="text"
-              placeholder="Subject"
               value={subject}
               name="subject"
               onInput={inputHandler}
@@ -119,7 +110,6 @@ export default function Contact() {
           <div className="control">
             <textarea
               className="textarea"
-              placeholder="Message"
               value={message}
               name="message"
               onInput={inputHandler}
