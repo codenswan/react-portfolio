@@ -6,8 +6,8 @@ export default function Cards(props) {
   return (
     <Card className="is-shady" key={props.id}>
       <Card.Image size="4by3" src={props.image} alt="project logo" />
-      <Card.Content className="card-content">
-        <Content className="content">
+      <Card.Content >
+        <Content>
           <h4>{props.title}</h4>
           <p>{props.about}</p>
           <p>Languages: {props.languages}</p>
