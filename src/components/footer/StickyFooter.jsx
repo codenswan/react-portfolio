@@ -45,39 +45,26 @@ export default function StickyFooter() {
           </a>
         </div>
         <div className="control level-item">
-          <a
-            href="https://bulmatemplates.github.io/bulma-templates/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="tags has-addons">
-              <p>
-                Inspiration for Bulma modals from{' '}
-                <span className="tag is-dark">Bulma Templates.</span>
-              </p>
-            </div>
-          </a>
-        </div>
-        <div className="control level-item">
-          Icons made by{' '}
-          <a
-            href="https://www.flaticon.com/authors/pixel-perfect"
-            target="_blank"
-            title="Pixel perfect"
-            rel="noopener noreferrer"
-          >
-            {' '}
+          <span>
+            Icons made by{' '}
+            <a
+              href="https://www.flaticon.com/authors/pixel-perfect"
+              target="_blank"
+              title="Pixel perfect"
+              rel="noopener noreferrer"
+            >
             Pixel perfect{' '}
-          </a>{' '}
-          from{' '}
-          <a
-            href="https://www.flaticon.com/"
-            target="_blank"
-            title="Flaticon"
-            rel="noopener noreferrer"
-          >
-            www.flaticon.com
-          </a>
+            </a>
+            from{' '}
+            <a
+              href="https://www.flaticon.com/"
+              target="_blank"
+              title="Flaticon"
+              rel="noopener noreferrer"
+            >
+              www.flaticon.com
+            </a>
+          </span>
         </div>
       </div>
     </Footer>
