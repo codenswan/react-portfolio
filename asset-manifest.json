@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.08c8e672.chunk.css",
+    "main.js": "/static/js/main.7322689a.chunk.js",
+    "main.js.map": "/static/js/main.7322689a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e312f208.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e312f208.js.map",
+    "static/css/2.0111e717.chunk.css": "/static/css/2.0111e717.chunk.css",
+    "static/js/2.3f22b5af.chunk.js": "/static/js/2.3f22b5af.chunk.js",
+    "static/js/2.3f22b5af.chunk.js.map": "/static/js/2.3f22b5af.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e285d42bf7e67afb6de6cac457d09743.js": "/precache-manifest.e285d42bf7e67afb6de6cac457d09743.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.0111e717.chunk.css.map": "/static/css/2.0111e717.chunk.css.map",
+    "static/css/main.08c8e672.chunk.css.map": "/static/css/main.08c8e672.chunk.css.map",
+    "static/js/2.3f22b5af.chunk.js.LICENSE.txt": "/static/js/2.3f22b5af.chunk.js.LICENSE.txt",
+    "static/media/Tech-Base.png": "/static/media/Tech-Base.eaa18222.png",
+    "static/media/circle-cropped.png": "/static/media/circle-cropped.0d01f30a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e312f208.js",
+    "static/css/2.0111e717.chunk.css",
+    "static/js/2.3f22b5af.chunk.js",
+    "static/css/main.08c8e672.chunk.css",
+    "static/js/main.7322689a.chunk.js"
+  ]
+}
