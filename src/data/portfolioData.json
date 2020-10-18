@@ -10,6 +10,16 @@
         "deployed": "https://codenswan.github.io/MyMVP/"
     },
     {
+        "id": 4,
+        "title": "Tiny Steps",
+        "about": "Bad habits can be hard to break. Building good habits is a crucial part of breaking with the old. Tiny Steps helps you form good habits one tiny step at a time.",
+        "languages": "HTML, CSS",
+        "technologies": "Bootstrap, Chart.js, Handlebars, Nodemailer, Sql",
+        "image": "assets/images/tinySteps.png",
+        "github": "https://github.com/codenswan/Tiny_Steps",
+        "deployed": "https://tinystepsau.herokuapp.com/"
+    },
+    {
         "id": 2,
         "title": "Weather Dashboard",
         "about": "Plan a trip or an outing with this 5 day weather forecaster.",
@@ -28,15 +38,6 @@
         "image":"assets/images/Workday.png",
         "github": "https://github.com/codenswan/05-Third-Party-APIs-Work-Day-Scheduler",
         "deployed": "https://codenswan.github.io/05-Third-Party-APIs-Work-Day-Scheduler"
-    },
-    {
-        "id": 4,
-        "title": "Tiny Steps",
-        "about": "Bad habits can be hard to break. Building good habits is a crucial part of breaking with the old. Tiny Steps helps you form good habits one tiny step at a time.",
-        "languages": "HTML, CSS",
-        "technologies": "Bootstrap, Chart.js, Handlebars, Nodemailer, Sql",
-        "image": "assets/images/tinySteps.png",
-        "github": "https://github.com/codenswan/Tiny_Steps",
-        "deployed": "https://tinystepsau.herokuapp.com/"
     }
+
 ]
