@@ -16,9 +16,15 @@
 .card-content .content {
     font-size: 14px;
     margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.card-content .content h4 {
+.card-footer {
+    margin-top: auto;
+  }
+
+h4 {
     font-size: 16px;
     font-weight: 700;
 }
@@ -26,6 +32,7 @@
 .card {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
     margin-bottom: 2rem;
+    height: 100%;
 }
 
 .is-shady {
