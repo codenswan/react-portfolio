@@ -7,7 +7,7 @@ export default function Portfolio() {
   return (
     <Section>
       <Container id="portfolio">
-        <Columns breakpoint="mobile" className="features">
+        <Columns className="features">
           {portfolioArray.map((portfolio) => (
             <Columns.Column size="one-quarter" key={portfolio.id}>
               <Cards
