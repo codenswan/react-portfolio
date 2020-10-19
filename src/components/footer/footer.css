@@ -7,8 +7,13 @@ footer li:before {
     color: #147efb;
 }
 
+.footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
 #logos {
-    width: 100px;
+    width: 80px;
     height: auto;
     justify-content: center;
     text-align: center;
