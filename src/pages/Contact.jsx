@@ -72,7 +72,7 @@ export default function Contact() {
             <input
               className="input"
               type="text"
-              value={name}
+              defaultValue={name}
               name="name"
               onInput={inputHandler}
             />
@@ -85,7 +85,7 @@ export default function Contact() {
             <input
               className="input"
               type="email"
-              value={email}
+              defaultValue={email}
               name="email"
               onInput={inputHandler}
             />
@@ -98,7 +98,7 @@ export default function Contact() {
             <input
               className="input"
               type="text"
-              value={subject}
+              defaultValue={subject}
               name="subject"
               onInput={inputHandler}
             />
@@ -110,7 +110,7 @@ export default function Contact() {
           <div className="control">
             <textarea
               className="textarea"
-              value={message}
+              defaultValue={message}
               name="message"
               onInput={inputHandler}
             ></textarea>

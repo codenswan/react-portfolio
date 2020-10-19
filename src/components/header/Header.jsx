@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Hero, Navbar } from 'react-bulma-components';
 import Banner from './Tech-Base.png';
 import './header.css';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -16,16 +17,9 @@ export default function Header() {
       <div className="box cta">
         <Navbar.Container className="has-text-right">
           <Navbar.Menu className="nav-menu is-active" id="navMenu">
-            <Navbar.Item className="nav-item" href="/about">
-              {/* <Link to="/about">About | </Link> */}
-              About
-            </Navbar.Item>
-            <Navbar.Item className="nav-item" href="/portfolio">
-              Portfolio
-            </Navbar.Item>
-            <Navbar.Item className="nav-item" href="/contact">
-              Contact
-            </Navbar.Item>
+              <Link className="navbar-item nav-item"to="/about">About </Link>
+              <Link className="navbar-item nav-item"to="/portfolio">Portfolio </Link>
+              <Link className="navbar-item nav-item"to="/contact">Contact </Link>
           </Navbar.Menu>
         </Navbar.Container>
       </div>

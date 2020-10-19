@@ -1,7 +1,7 @@
 import React from 'react';
 import { Columns, Container, Section } from 'react-bulma-components';
-import Cards from '../../components/cards/Card';
-import portfolioArray from '../../data/portfolioData.json';
+import Cards from '../components/cards/Card';
+import portfolioArray from '../data/portfolioData.json';
 
 export default function Portfolio() {
   return (
@@ -11,7 +11,6 @@ export default function Portfolio() {
           {portfolioArray.map((portfolio) => (
             <Columns.Column size="one-quarter" key={portfolio.id}>
               <Cards
-                
                 id={portfolio.id}
                 title={portfolio.title}
                 about={portfolio.about}
