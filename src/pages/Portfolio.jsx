@@ -1,7 +1,7 @@
 import React from 'react';
 import { Columns, Container, Section } from 'react-bulma-components';
 import Cards from '../components/cards/Card';
-import portfolioArray from '../data/portfolioData.json';
+import portfolioArray from '../data/portfolioData';
 
 export default function Portfolio() {
   return (
